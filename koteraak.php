@@ -2,10 +2,10 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," ===========================\n");
-echo color("red","| Claim Voucher Gojek|\n");
+echo color("red","| Claim Voucher Gojek BELANJAHEMAT|\n");
 echo color("red","| Auto create Gojek X Redeem voucher |\n");
-echo color("red","| github: raka3275 |\n");
-echo color("red","| fanspage :pejuangreceh|\n");
+echo color("red","| github: raka3275 RH |\n");
+echo color("red","| fanspage :pejuangreceh AAK|\n");
 echo color("red","| Creator : kumpulanremaja.com          |\n");
 echo "| Version : Premium X pertalite      |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
