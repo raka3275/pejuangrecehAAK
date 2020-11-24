@@ -74,14 +74,14 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         for($a=1;$a<=3;$a++)
 {
         echo color("red","💞💞  ");
-        sleep(7);
+        sleep(5);
         }
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
 echo colorreff("green","Santai dulu ya... ");
 echo "\n";
-sleep(10);
+sleep(7);
         
 echo "\n";
 
@@ -89,7 +89,7 @@ echo "\n";
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(10);
+        sleep(7);
         }
          $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJABERSAMANOV"}');
         $message = fetch_value12($code1,'"message":"','"');
@@ -97,13 +97,13 @@ echo "\n";
         echo "\n".colorss("green","👍🙏 Message: ".$message);
         }else{
         echo "\n".colorss("red","-] Message: ".$message);
-        sleep(7);
+        sleep(5);
 }
 echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(10);
+        sleep(7);
         }
         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
         $message = fetch_value12($code1,'"message":"','"');
@@ -111,13 +111,13 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".color("green","👍🙏 Message: ".$message);
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        sleep(10);
+        sleep(7);
 }
 echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(10);
+        sleep(7);
         }
         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD1908"}');
         $message = fetch_value12($code1,'"message":"','"');
@@ -125,13 +125,13 @@ echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
         echo "\n".colorss("green","👍🙏 Message: ".$message);
         }else{
         echo "\n".colorss("red","-] Message: ".$message);
-        sleep(15);
+        sleep(10);
 }
         echo "\n".color("green","👌🍱 Ambil Voucher ACAK ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(8);
+        sleep(6);
         }
         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJABERSAMANOV"}');
         $message = fetch_value1($code1,'"message":"','"');
@@ -142,7 +142,7 @@ echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
         echo "\n".colorss("red","☠️☠️ Message: ".$message);
 	    gofood:
 	
-        sleep(10);
+        sleep(7);
         }
        
         $cekvoucher = requestedd('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
