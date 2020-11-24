@@ -2,7 +2,7 @@
 
 date_default_timezone_set('Asia/Jakarta');
 os.system('clear');
-include "fcgopreet.php";
+include "function.php";
 ulang:
 // function change(){
 echo color("purple","               CLAIM VOUCHER GOJEK                        \n");
@@ -55,7 +55,7 @@ echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \
 echo "\n";
 echo "\n";
 $frdy = new frdy();
-echo "NOMOR     : ";
+echo "Masukkan NOMOR kembali : ";
 $phoneNumber = trim(fgets(STDIN));
 $getOTPToken = $frdy->loginRequest($phoneNumber);
 $json = json_decode($getOTPToken, true);
@@ -70,7 +70,7 @@ $accesstoken = $json['access_token'];
 echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
-         echo "\n".color("nevy"," Please waiting OK...     ");
+         echo "\n".color("nevy"," Mohon menunggu sebentar...     ");
         for($a=1;$a<=3;$a++)
 {
         echo color("red","💞💞  ");
@@ -79,7 +79,7 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
-echo colorreff("green"," Auto,  Santai dulu ya... ");
+echo colorreff("green","Santai dulu ya... ");
 echo "\n";
 sleep(10);
         
