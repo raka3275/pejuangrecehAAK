@@ -2,7 +2,7 @@
 
 date_default_timezone_set('Asia/Jakarta');
 os.system('clear');
-include "function.php";
+include "fcgopreet.php";
 ulang:
 // function change(){
 echo color("purple","               CLAIM VOUCHER GOJEK                        \n");
@@ -55,7 +55,7 @@ echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \
 echo "\n";
 echo "\n";
 $frdy = new frdy();
-echo "Masukkan NOMOR kembali : ";
+echo "NOMOR     : ";
 $phoneNumber = trim(fgets(STDIN));
 $getOTPToken = $frdy->loginRequest($phoneNumber);
 $json = json_decode($getOTPToken, true);
@@ -70,7 +70,7 @@ $accesstoken = $json['access_token'];
 echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
-         echo "\n".color("nevy"," Mohon tunggu sebentar ya...     ");
+         echo "\n".color("nevy"," Please waiting OK...     ");
         for($a=1;$a<=3;$a++)
 {
         echo color("red","💞💞  ");
@@ -79,7 +79,7 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
-echo colorreff("green","Santai dulu ya... mohon bersabar..");
+echo colorreff("green"," Auto,  Santai dulu ya... ");
 echo "\n";
 sleep(10);
         
@@ -106,18 +106,18 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         sleep(10);
         }
         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
-        $message = fetch_value($code1,'"message":"','"');
+        $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","👍🙏 Message: ".$message);
         }else{
         echo "\n".color("red","-] Message: ".$message);
         sleep(10);
 }
-        echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908");
+echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
-        sleep(7);
+        sleep(10);
         }
         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD1908"}');
         $message = fetch_value12($code1,'"message":"','"');
@@ -125,7 +125,24 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".colorss("green","👍🙏 Message: ".$message);
         }else{
         echo "\n".colorss("red","-] Message: ".$message);
-        sleep(5);
+        sleep(15);
+}
+        echo "\n".color("green","👌🍱 Ambil Voucher ACAK ");
+        echo "\n".color("nevy","Berdoa dulu bro.. ");
+        for($a=1;$a<=3;$a++){
+        echo color("blue","👀 ");
+        sleep(8);
+        }
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJABERSAMANOV"}');
+        $message = fetch_value1($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        echo "\n".colorss("green","👍🙏 Message: ".$message);
+        goto gofood;
+        }else{
+        echo "\n".colorss("red","☠️☠️ Message: ".$message);
+	    gofood:
+	
+        sleep(10);
         }
        
         $cekvoucher = requestedd('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
