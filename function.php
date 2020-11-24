@@ -4,7 +4,7 @@ class frdy
     const ApiUrl = 'https://goid.gojekapi.com';
     const Api2Url = 'https://api.gojekapi.com';
     const appId = 'com.gojek.app';
-    const phoneModel = 'Xiaomi, Redmi Note 8';
+    const phoneModel = 'Xiaomi, Redmi 5 Plus';
     const phoneMake = 'Xiaomi';
     const osDevice = 'Android,8';
     const xPlatform = 'Android';
