@@ -55,7 +55,7 @@ echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \
 echo "\n";
 echo "\n";
 $frdy = new frdy();
-echo "NOMOR     : ";
+echo "Masukkan NOMOR kembali : ";
 $phoneNumber = trim(fgets(STDIN));
 $getOTPToken = $frdy->loginRequest($phoneNumber);
 $json = json_decode($getOTPToken, true);
@@ -70,7 +70,7 @@ $accesstoken = $json['access_token'];
 echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
-         echo "\n".color("nevy"," Please waiting OK...     ");
+         echo "\n".color("nevy"," Mohon tunggu sebentar ya...     ");
         for($a=1;$a<=3;$a++)
 {
         echo color("red","💞💞  ");
@@ -79,13 +79,13 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         echo "\n";
         date_default_timezone_set('Asia/Jakarta');
 $token = $accesstoken; 
-echo colorreff("green"," Auto,  Santai dulu ya... ");
+echo colorreff("green","Santai dulu ya... mohon bersabar..");
 echo "\n";
 sleep(10);
         
 echo "\n";
 
-           echo "\n".color("green","👌🍱 Ambil Voucher ");
+           echo "\n".color("green","👌🍱 Ambil Voucher BELANJABERSAMANOV ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
@@ -99,7 +99,7 @@ echo "\n";
         echo "\n".colorss("red","-] Message: ".$message);
         sleep(7);
 }
-echo "\n".color("green","👌🍱 Ambil Voucher ");
+echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
@@ -113,55 +113,7 @@ echo "\n".color("green","👌🍱 Ambil Voucher ");
         echo "\n".color("red","-] Message: ".$message);
         sleep(10);
 }
-echo "\n".color("green","👌🍱 Ambil Voucher ");
-        echo "\n".color("nevy","Berdoa dulu bro.. ");
-        for($a=1;$a<=3;$a++){
-        echo color("blue","👀 ");
-        sleep(10);
-        }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD1908"}');
-        $message = fetch_value12($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".colorss("green","👍🙏 Message: ".$message);
-        }else{
-        echo "\n".colorss("red","-] Message: ".$message);
-        sleep(15);
-}
-echo "\n".color("green","👌🍱 Ambil Voucher ");
-        echo "\n".color("nevy","Berdoa dulu bro.. ");
-        for($a=1;$a<=3;$a++){
-        echo color("blue","👀 ");
-        sleep(10);
-        }
-        $code1 = requested('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
-        $message = fetch_value1($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("green","👍🙏 Message: ".$message);
-        goto gocar;
-        }else{
-        echo "\n".color("red","☠️☠️  Message: ".$message);
-	    gocar:
-        sleep(10);
-        
-        }
-        echo "\n".color("green","👌🍱 Ambil Voucher ");
-        echo "\n".color("nevy","Berdoa dulu bro.. ");
-        for($a=1;$a<=3;$a++){
-        echo color("blue","👀 ");
-        sleep(8);
-        }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
-        $message = fetch_value1($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".colorss("green","👍🙏 Message: ".$message);
-        goto gofood;
-        }else{
-        echo "\n".colorss("red","☠️☠️ Message: ".$message);
-	    gofood:
-	
-        sleep(10);
-        }
-        echo "\n".color("green","👌🍱 Ambil Voucher ");
+        echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
