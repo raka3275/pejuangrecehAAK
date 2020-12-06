@@ -85,13 +85,13 @@ sleep(10);
         
 echo "\n";
 
-           echo "\n".color("green","👌🍱 Ambil Voucher BELANJABERSAMANOV ");
+           echo "\n".color("green","👌🍱 Ambil Voucher HARBOLNASMART ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJABERSAMANOV"}');
+         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -113,13 +113,13 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".color("red","-] Message: ".$message);
         sleep(10);
 }
-echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
+echo "\n".color("green","👌🍱 Ambil Voucher HARBOLNASMART ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD1908"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -133,7 +133,7 @@ echo "\n".color("green","👌🍱 Ambil Voucher MAUGOFOOD1908 ");
         echo color("blue","👀 ");
         sleep(8);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJABERSAMANOV"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
         $message = fetch_value1($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
