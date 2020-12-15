@@ -85,13 +85,13 @@ sleep(10);
         
 echo "\n";
 
-           echo "\n".color("green","👌🍱 Ambil Voucher HARBOLNASMART ");
+           echo "\n".color("green","👌🍱 Ambil Voucher YEARENDSALE ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
+         $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -99,13 +99,13 @@ echo "\n";
         echo "\n".colorss("red","-] Message: ".$message);
         sleep(7);
 }
-echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
+echo "\n".color("green","👌🍱 Ambil Voucher YEARENDSALE ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","👍🙏 Message: ".$message);
@@ -113,13 +113,13 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARIJADIMART ");
         echo "\n".color("red","-] Message: ".$message);
         sleep(10);
 }
-echo "\n".color("green","👌🍱 Ambil Voucher HARBOLNASMART ");
+echo "\n".color("green","👌🍱 Ambil Voucher YEARENDSALE ");
         echo "\n".color("nevy","Berdoa dulu bro.. ");
         for($a=1;$a<=3;$a++){
         echo color("blue","👀 ");
         sleep(10);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value12($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
@@ -133,7 +133,7 @@ echo "\n".color("green","👌🍱 Ambil Voucher HARBOLNASMART ");
         echo color("blue","👀 ");
         sleep(8);
         }
-        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARBOLNASMART"}');
+        $code1 = requestedd('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"YEARENDSALE"}');
         $message = fetch_value1($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".colorss("green","👍🙏 Message: ".$message);
